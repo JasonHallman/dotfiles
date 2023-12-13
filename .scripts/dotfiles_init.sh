@@ -14,5 +14,6 @@ if [ $? = 0 ]; then
     dotfiles checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfiles-backup/{}
 fi;
 
-dotfiles checkout --recurse-submodules
+dotfiles checkout
 dotfiles config status.showUntrackedFiles no
+dotfiles pull --recurse-submodules
