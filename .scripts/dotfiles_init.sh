@@ -5,7 +5,7 @@ function dotfiles {
 }
 
 mkdir -p .dotfiles-backup
-dotfiles checkout --recurse-submodules
+dotfiles checkout
 
 if [ $? = 0 ]; then
   echo "Checked out dotfiles";
