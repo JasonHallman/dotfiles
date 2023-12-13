@@ -5,7 +5,7 @@ function dotfiles {
 }
 
 mkdir -p .dotfiles-backup
-dotfiles checkout
+dotfiles checkout --recurse-submodules
 
 if [ $? = 0 ]; then
   echo "Checked out dotfiles";
@@ -14,5 +14,5 @@ if [ $? = 0 ]; then
     dotfiles checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
 fi;
 
-dotfiles checkout
+dotfiles checkout --recurse-submodules
 dotfiles config status.showUntrackedFiles no
