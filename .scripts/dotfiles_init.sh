@@ -1,4 +1,4 @@
-git clone --recurse-submodules -j8 --bare https://github.com/JasonHallman/dotfiles.git $HOME/.cfg
+git clone --bare https://github.com/JasonHallman/dotfiles.git $HOME/.cfg
 
 function dotfiles {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
