@@ -113,9 +113,9 @@ bind '"\C-w": unix-filename-rubout'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-
 if [[ $HOSTNAME =~ ^jasons-mbp.* ]]; then
 	set -o ignoreeof
+	export CLICOLOR=1
 fi
-export CLICOLOR=1
 
+. "$HOME/.cargo/env"
