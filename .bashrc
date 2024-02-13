@@ -114,6 +114,8 @@ bind '"\C-w": unix-filename-rubout'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
-if [ $HOSTNAME = "jasonhallman@ibm.com@jasons-mbp" ]; then
+if [[ $HOSTNAME =~ ^jasons-mbp.* ]]; then
 	set -o ignoreeof
 fi
+export CLICOLOR=1
+
