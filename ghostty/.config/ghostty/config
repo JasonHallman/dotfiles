@@ -1,0 +1,8 @@
+# You can preview the config here
+ 
+command = /opt/homebrew/bin/fish
+clipboard-read = allow
+clipboard-write = allow
+copy-on-select = true
+mouse-hide-while-typing = true
+
