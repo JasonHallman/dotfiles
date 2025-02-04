@@ -254,7 +254,7 @@ default_shell "fish"
 //   - true (default)
 //   - false
 //
-// pane_frames true
+pane_frames false
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
@@ -284,7 +284,7 @@ default_shell "fish"
 // also default to the scrollback size. This does nothing if `serialize_pane_viewport` is not true.
 // (Requires restart)
 //
-// scrollback_lines_to_serialize 10000
+scrollback_lines_to_serialize 1000000
 
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
