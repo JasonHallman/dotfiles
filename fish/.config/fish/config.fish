@@ -3,6 +3,8 @@ if status is-interactive
     eval (zellij setup --generate-auto-start fish | string collect)
 end
 
+set -gx EDITOR nvim
+
 fish_vi_key_bindings
 
 # Make autocompletion work in vi mode
