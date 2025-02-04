@@ -1,11 +1,11 @@
+set -gx EDITOR nvim
+set -gx ZELLIJ_AUTO_ATTACH true
+set -gx ZELLIJ_AUTO_EXIT true
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     eval (zellij setup --generate-auto-start fish | string collect)
 end
-
-set -gx EDITOR nvim
-set -gx ZELLIJ_AUTO_ATTACH true
-set -gx ZELLIJ_AUTO_EXIT true
 
 fish_vi_key_bindings
 
