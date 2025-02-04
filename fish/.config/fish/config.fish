@@ -4,6 +4,8 @@ if status is-interactive
 end
 
 set -gx EDITOR nvim
+set -gx ZELLIJ_AUTO_ATTACH true
+set -gx ZELLIJ_AUTO_EXIT true
 
 fish_vi_key_bindings
 
