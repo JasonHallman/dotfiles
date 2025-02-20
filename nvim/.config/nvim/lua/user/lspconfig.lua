@@ -70,12 +70,13 @@ function M.config()
     "html",
     "eslint",
     "ts_ls",
-    "pyright",
     "bashls",
     "jsonls",
     "yamlls",
     "rust_analyzer",
     "dockerls",
+    "ruff",
+    "pyright",
   }
 
   local default_diagnostic_config = {

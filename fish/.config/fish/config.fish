@@ -23,10 +23,13 @@ alias gs="git status"
 alias gd="git diff"
 alias gds="git diff --staged"
 alias gl="git log"
+alias ga="git add"
 alias config="nvim $HOME/.config/fish/config.fish ; source $HOME/.config/fish/config.fish"
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
+alias uvi="uv run nvim"
+alias uvr="uv run"
 
 zoxide init fish | source
 
