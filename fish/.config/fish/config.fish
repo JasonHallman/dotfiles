@@ -13,6 +13,7 @@ bind -M insert \cE end-of-line     # Bind Ctrl-E to EOL
 
 fish_add_path "$HOME/.cargo/bin"
 fish_add_path "$HOME/.local/bin"
+fish_add_path "$HOME/go/bin"
 fish_add_path /usr/local/go/bin
 fish_add_path /opt/homebrew/bin
 
@@ -28,6 +29,9 @@ alias ll="exa -l"
 alias la="exa -la"
 
 zoxide init fish | source
-eval "$(direnv hook fish)"
-pyenv init - fish | source
 
+eval "$(direnv hook fish)"
+
+set -Ux PYENV_ROOT $HOME/.pyenv
+fish_add_path $PYENV_ROOT/bin
+pyenv init - fish | source
