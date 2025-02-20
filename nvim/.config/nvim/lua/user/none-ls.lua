@@ -32,23 +32,25 @@ function M.config()
     sources = {
       formatting.stylua,
       formatting.prettier,
-      formatting.black.with {
-        extra_args = {
-          "--line-length",
-          "88",
-          "--preview",
-          "--enable-unstable-feature",
-          "string_processing",
-        },
-      },
+      -- diagnostics.ruff,
+      -- formatting.ruff,
+      -- formatting.black.with {
+      --   extra_args = {
+      --     "--line-length",
+      --     "88",
+      --     "--preview",
+      --     "--enable-unstable-feature",
+      --     "string_processing",
+      --   },
+      -- },
       -- null_ls.builtins.formatting.isort,
       require "none-ls.formatting.rustfmt",
-      require("none-ls.diagnostics.flake8").with {
-        extra_args = {
-          "--max-line-length=88",
-          "--ignore=E221",
-        },
-      },
+      -- require("none-ls.diagnostics.flake8").with {
+      --   extra_args = {
+      --     "--max-line-length=88",
+      --     "--ignore=E221",
+      --   },
+      -- },
       -- formatting.prettier.with {
       --   extra_filetypes = { "toml" },
       --   -- extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },

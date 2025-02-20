@@ -11,10 +11,11 @@ function M.config()
     "cssls",
     "html",
     "ts_ls",
-    "pyright",
     "bashls",
     "jsonls",
     "dockerls",
+    "ruff",
+    "pyright",
   }
 
   require("mason").setup {
