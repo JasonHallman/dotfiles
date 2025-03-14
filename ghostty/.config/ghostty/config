@@ -5,4 +5,7 @@ clipboard-read = allow
 clipboard-write = allow
 copy-on-select = true
 mouse-hide-while-typing = true
-
+window-height = 510
+window-width = 1640
+keybind = ctrl+f=write_scrollback_file:paste
+keybind = "cmd+f=text:\x1b[H $EDITOR \n"
