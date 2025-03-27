@@ -10,7 +10,7 @@ end
 fish_vi_key_bindings
 
 # Make autocompletion work in vi mode
-bind -M insert \cE end-of-line     # Bind Ctrl-E to EOL
+bind -M insert \cE end-of-line # Bind Ctrl-E to EOL
 
 fish_add_path "$HOME/.cargo/bin"
 fish_add_path "$HOME/.local/bin"
@@ -25,12 +25,13 @@ alias gd="git diff"
 alias gds="git diff --staged"
 alias gl="git log"
 alias ga="git add"
-alias config="nvim $HOME/.config/fish/config.fish ; source $HOME/.config/fish/config.fish"
+alias config="hx $HOME/.config/fish/config.fish ; source $HOME/.config/fish/config.fish"
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
 alias uvi="uv run nvim"
 alias uvr="uv run"
+alias uhx="uv run hx"
 
 zoxide init fish | source
 
