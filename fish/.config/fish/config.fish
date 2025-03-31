@@ -1,5 +1,5 @@
-set -gx EDITOR nvim
-set -gx VISUAL nvim
+set -gx EDITOR hx
+set -gx VISUAL hx
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 # set -gx ZELLIJ_AUTO_ATTACH true
 
@@ -27,10 +27,10 @@ alias gd="git diff"
 alias gds="git diff --staged"
 alias gl="git log"
 alias ga="git add"
-alias config="hx $HOME/.config/fish/config.fish ; source $HOME/.config/fish/config.fish"
-alias ls="exa"
-alias ll="exa -l"
-alias la="exa -la"
+alias config="$EDITOR $HOME/.config/fish/config.fish ; source $HOME/.config/fish/config.fish"
+alias ls="eza"
+alias ll="eza -l"
+alias la="eza -la"
 alias uvi="uv run nvim"
 alias uvr="uv run"
 alias uhx="uv run hx"
