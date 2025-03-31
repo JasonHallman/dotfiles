@@ -31,6 +31,7 @@ alias config="$EDITOR $HOME/.config/fish/config.fish ; source $HOME/.config/fish
 alias ls="eza"
 alias ll="eza -l"
 alias la="eza -la"
+alias laa="eza -laa"
 alias uvi="uv run nvim"
 alias uvr="uv run"
 alias uhx="uv run hx"
