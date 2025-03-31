@@ -1,5 +1,6 @@
 set -gx EDITOR nvim
 set -gx VISUAL nvim
+set -gx XDG_CONFIG_HOME "$HOME/.config"
 # set -gx ZELLIJ_AUTO_ATTACH true
 
 if status is-interactive
@@ -11,6 +12,7 @@ fish_vi_key_bindings
 
 # Make autocompletion work in vi mode
 bind -M insert \cE end-of-line # Bind Ctrl-E to EOL
+bind -M default -M visual -M insert \ca beginning-of-line
 
 fish_add_path "$HOME/.cargo/bin"
 fish_add_path "$HOME/.local/bin"

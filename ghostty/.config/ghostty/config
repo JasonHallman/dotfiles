@@ -9,3 +9,4 @@ window-height = 510
 window-width = 1640
 keybind = ctrl+f=write_scrollback_file:paste
 keybind = "cmd+f=text:\x1b[H $EDITOR \n"
+scrollback-limit=10000000000
